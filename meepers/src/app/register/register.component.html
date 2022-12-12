@@ -1,0 +1,59 @@
+<form
+  #userRegForm="ngForm"
+  (ngSubmit)="onCreateUser(userRegForm.value)"
+  class="form-floating w-50 mx-auto p-5 bg-light"
+>
+  <div class="mb-3">
+    <div class="display-2 text-center">Register</div>
+  </div>
+  <div class="mb-3">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="In-game Name"
+      required
+      name="userName"
+      ngModel
+    />
+  </div>
+  <div class="mb-3">
+    <input
+      type="email"
+      class="form-control"
+      placeholder="Email Address"
+      required
+      name="email"
+      ngModel
+    />
+  </div>
+  <div class="mb-3">
+    <input
+      type="password"
+      class="form-control"
+      placeholder="Password"
+      required
+      name="password"
+      ngModel
+    />
+  </div>
+  <div class="mb-3">
+    <input
+      type="password"
+      class="form-control"
+      placeholder="Re-enter Password"
+      required
+      name="password"
+      ngModel
+    />
+  </div>
+
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" />
+    <label class="form-check-label" for="isMember"
+      >I am currently a member</label
+    >
+  </div>
+  <div class="row">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
